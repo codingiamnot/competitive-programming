@@ -824,6 +824,23 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF72901003": {
+    "contest_id": 1312,
+    "language": "GNU C++11",
+    "path": "codeforces\\1312\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Bogosort",
+    "problem_url": "https://codeforces.com/contest/1312/problem/B",
+    "submission_id": "CF72901003",
+    "submission_url": "https://codeforces.com/contest/1312/submission/72901003",
+    "tags": [
+      "constructive algorithms",
+      "sortings",
+      "*1000"
+    ],
+    "timestamp": "Mar/10/2020 16:49"
+  },
   "CF72902154": {
     "contest_id": 1312,
     "language": "GNU C++11",
