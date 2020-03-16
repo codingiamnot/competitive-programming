@@ -824,6 +824,23 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF73394224": {
+    "contest_id": 1204,
+    "language": "GNU C++11",
+    "path": "codeforces\\1204\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Mislove Has Lost an Array",
+    "problem_url": "https://codeforces.com/contest/1204/problem/B",
+    "submission_id": "CF73394224",
+    "submission_url": "https://codeforces.com/contest/1204/submission/73394224",
+    "tags": [
+      "greedy",
+      "math",
+      "*900"
+    ],
+    "timestamp": "Mar/16/2020 11:15"
+  },
   "CF73401381": {
     "contest_id": 1204,
     "language": "GNU C++11",
