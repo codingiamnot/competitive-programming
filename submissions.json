@@ -824,6 +824,23 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF73421466": {
+    "contest_id": 909,
+    "language": "GNU C++11",
+    "path": "codeforces\\909\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Segments",
+    "problem_url": "https://codeforces.com/contest/909/problem/B",
+    "submission_id": "CF73421466",
+    "submission_url": "https://codeforces.com/contest/909/submission/73421466",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Mar/16/2020 17:56"
+  },
   "CF73468126": {
     "contest_id": 399,
     "language": "GNU C++11",
