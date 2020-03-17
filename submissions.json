@@ -824,6 +824,21 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF73468126": {
+    "contest_id": 399,
+    "language": "GNU C++11",
+    "path": "codeforces\\399\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Pages",
+    "problem_url": "https://codeforces.com/contest/399/problem/A",
+    "submission_id": "CF73468126",
+    "submission_url": "https://codeforces.com/contest/399/submission/73468126",
+    "tags": [
+      "implementation"
+    ],
+    "timestamp": "Mar/17/2020 11:05"
+  },
   "CF73470486": {
     "contest_id": 399,
     "language": "GNU C++11",
