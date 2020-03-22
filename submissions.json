@@ -824,6 +824,22 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF73986987": {
+    "contest_id": 543,
+    "language": "GNU C++14",
+    "path": "codeforces\\543\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Writing Code",
+    "problem_url": "https://codeforces.com/contest/543/problem/A",
+    "submission_id": "CF73986987",
+    "submission_url": "https://codeforces.com/contest/543/submission/73986987",
+    "tags": [
+      "dp",
+      "*1800"
+    ],
+    "timestamp": "Mar/22/2020 20:28"
+  },
   "CF74052435": {
     "contest_id": 1327,
     "language": "GNU C++14",
