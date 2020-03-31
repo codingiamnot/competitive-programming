@@ -824,6 +824,22 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF74904859": {
+    "contest_id": 983,
+    "language": "GNU C++14",
+    "path": "codeforces\\983\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "XOR-pyramid",
+    "problem_url": "https://codeforces.com/contest/983/problem/B",
+    "submission_id": "CF74904859",
+    "submission_url": "https://codeforces.com/contest/983/submission/74904859",
+    "tags": [
+      "dp",
+      "*1800"
+    ],
+    "timestamp": "Mar/31/2020 12:25"
+  },
   "CF74930845": {
     "contest_id": 1332,
     "language": "GNU C++14",
