@@ -824,6 +824,25 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF80070098": {
+    "contest_id": 1105,
+    "language": "GNU C++14",
+    "path": "codeforces\\1105\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Kilani and the Game",
+    "problem_url": "https://codeforces.com/contest/1105/problem/D",
+    "submission_id": "CF80070098",
+    "submission_url": "https://codeforces.com/contest/1105/submission/80070098",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "implementation",
+      "shortest paths",
+      "*1900"
+    ],
+    "timestamp": "May/14/2020 15:45"
+  },
   "CF80121989": {
     "contest_id": 1342,
     "language": "GNU C++14",
