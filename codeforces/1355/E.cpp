@@ -35,7 +35,7 @@ int main()
     lo=v[1];
     hi=v[n];
 
-    while(hi-lo>1e2)
+    while(hi-lo>1e6)
     {
         mij1 = lo + (hi-lo)/3;
         mij2 = hi - (hi-lo)/3;
