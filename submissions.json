@@ -824,6 +824,22 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF81526912": {
+    "contest_id": 1358,
+    "language": "GNU C++14",
+    "path": "codeforces\\1358\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Celex Update",
+    "problem_url": "https://codeforces.com/contest/1358/problem/C",
+    "submission_id": "CF81526912",
+    "submission_url": "https://codeforces.com/contest/1358/submission/81526912",
+    "tags": [
+      "math",
+      "*1600"
+    ],
+    "timestamp": "May/26/2020 18:48"
+  },
   "CF81719184": {
     "contest_id": 1359,
     "language": "GNU C++14",
