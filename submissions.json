@@ -824,6 +824,25 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF82617902": {
+    "contest_id": 1361,
+    "language": "GNU C++14",
+    "path": "codeforces\\1361\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Johnny and Grandmaster",
+    "problem_url": "https://codeforces.com/contest/1361/problem/B",
+    "submission_id": "CF82617902",
+    "submission_url": "https://codeforces.com/contest/1361/submission/82617902",
+    "tags": [
+      "greedy",
+      "implementation",
+      "math",
+      "sortings",
+      "*1900"
+    ],
+    "timestamp": "Jun/05/2020 12:42"
+  },
   "CF94221765": {
     "contest_id": 825,
     "language": "GNU C++17 (64)",
