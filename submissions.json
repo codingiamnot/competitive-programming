@@ -824,6 +824,30 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF94278042": {
+    "contest_id": 1416,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1416\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "XOR Inverse",
+    "problem_url": "https://codeforces.com/contest/1416/problem/C",
+    "submission_id": "CF94278042",
+    "submission_url": "https://codeforces.com/contest/1416/submission/94278042",
+    "tags": [
+      "bitmasks",
+      "data structures",
+      "divide and conquer",
+      "dp",
+      "greedy",
+      "math",
+      "sortings",
+      "strings",
+      "trees",
+      "*2000"
+    ],
+    "timestamp": "Sep/30/2020 12:48"
+  },
   "CF94278679": {
     "contest_id": 1426,
     "language": "GNU C++17 (64)",
