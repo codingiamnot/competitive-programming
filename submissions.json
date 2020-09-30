@@ -824,6 +824,25 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF94267617": {
+    "contest_id": 715,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\715\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Complete The Graph",
+    "problem_url": "https://codeforces.com/contest/715/problem/B",
+    "submission_id": "CF94267617",
+    "submission_url": "https://codeforces.com/contest/715/submission/94267617",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "graphs",
+      "shortest paths",
+      "*2300"
+    ],
+    "timestamp": "Sep/30/2020 10:05"
+  },
   "CF94278042": {
     "contest_id": 1416,
     "language": "GNU C++17 (64)",
