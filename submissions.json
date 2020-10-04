@@ -824,6 +824,23 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF94662458": {
+    "contest_id": 1422,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1422\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Fence",
+    "problem_url": "https://codeforces.com/contest/1422/problem/A",
+    "submission_id": "CF94662458",
+    "submission_url": "https://codeforces.com/contest/1422/submission/94662458",
+    "tags": [
+      "geometry",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Oct/04/2020 19:07"
+  },
   "CF94674774": {
     "contest_id": 1422,
     "language": "GNU C++17 (64)",
