@@ -824,6 +824,22 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF94788012": {
+    "contest_id": 1423,
+    "language": "GNU C++17",
+    "path": "codeforces\\1423\\L.cpp",
+    "platform": "Codeforces",
+    "problem_index": "L",
+    "problem_name": "Light switches",
+    "problem_url": "https://codeforces.com/contest/1423/problem/L",
+    "submission_id": "CF94788012",
+    "submission_url": "https://codeforces.com/contest/1423/submission/94788012",
+    "tags": [
+      "meet-in-the-middle",
+      "*2600"
+    ],
+    "timestamp": "Oct/05/2020 18:44"
+  },
   "CF94788681": {
     "contest_id": 1423,
     "language": "GNU C++17 (64)",
