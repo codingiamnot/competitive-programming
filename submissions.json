@@ -824,6 +824,22 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF94788681": {
+    "contest_id": 1423,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1423\\M.cpp",
+    "platform": "Codeforces",
+    "problem_index": "M",
+    "problem_name": "Milutin's Plums",
+    "problem_url": "https://codeforces.com/contest/1423/problem/M",
+    "submission_id": "CF94788681",
+    "submission_url": "https://codeforces.com/contest/1423/submission/94788681",
+    "tags": [
+      "interactive",
+      "*2800"
+    ],
+    "timestamp": "Oct/05/2020 18:50"
+  },
   "CF94799582": {
     "contest_id": 1416,
     "language": "GNU C++17 (64)",
