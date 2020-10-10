@@ -824,6 +824,24 @@
     ],
     "timestamp": "Dec/28/2020 16:13"
   },
+  "CF95105430": {
+    "contest_id": 1427,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1427\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Chess Cheater",
+    "problem_url": "https://codeforces.com/contest/1427/problem/B",
+    "submission_id": "CF95105430",
+    "submission_url": "https://codeforces.com/contest/1427/submission/95105430",
+    "tags": [
+      "greedy",
+      "implementation",
+      "sortings",
+      "*1400"
+    ],
+    "timestamp": "Oct/10/2020 18:12"
+  },
   "CF95195832": {
     "contest_id": 1430,
     "language": "GNU C++17 (64)",
