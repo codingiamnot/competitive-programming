@@ -2,133 +2,126 @@
 
 using namespace std;
 
-struct nodS
+const int M=(1<<18);
+
+int n,m; //
+int i,nr,mask,nmask;
+int ans[19]; //
+long long sum[19]; //
+int adj[19]; //
+long long dp[19][19][M]; //
+bool fol[19][19][M]; //
+vector<int> adjv[19]; //
+vector<int> topo; //
+
+int ind[19];
+queue<int> q;
+
+void bfs()
 {
-    int coef, adj, in;
-    vector<int> v;
-};
-
-int n,m,i,j,x,y,w,mask;
-nodS nod[22];
-int dp[20][20][300005];
-int last[20][20][300005];
-int ans[22];
-
-void recon(int i, int j, int mask)
-{
-    if(!mask)
-        return;
-
-    int li=i;
-    int lj=j-1;
-
-    if(lj<0)
+    while(!q.empty())
     {
-        lj=n-1;
-        li--;
-    }
+        int x=q.front();
+        q.pop();
 
-    if(last[i][j][mask]==-1)
-    {
-        recon(li, lj, mask);
-    }
-    else
-    {
-        int it=last[i][j][mask];
-        ans[it]=i;
-
-        recon(li, lj, mask-(1<<it));
+        topo.push_back(x);
+        for(int it : adjv[x])
+        {
+            ind[it]--;
+            if(!ind[it])
+                q.push(it);
+        }
     }
 }
 int main()
 {
+    ios_base::sync_with_stdio(false);
+    cin.tie(0);
+
     cin>>n>>m;
     for(i=1;i<=m;i++)
     {
-        cin>>x>>y>>w;
+        int x,y,c;
+        cin>>x>>y>>c;
         x--;
         y--;
-
-        nod[x].coef+=w;
-        nod[y].coef-=w;
-
-        nod[x].v.push_back(y);
-        nod[x].adj+=(1<<y);
-
-        nod[y].in++;
+        sum[x]+=c;
+        sum[y]-=c;
+        adj[x]+=1<<y;
+        adjv[x].push_back(y);
+        ind[y]++;
     }
 
-    queue<int> q;
-    vector<int> topo;
     for(i=0;i<n;i++)
-    {
-        if(!nod[i].in)
+        if(!ind[i])
             q.push(i);
-    }
+    bfs();
 
-    while(!q.empty())
-    {
-        int p=q.front();
-        q.pop();
-        topo.push_back(p);
+    for(nr=0;nr<=n;nr++)
+        for(i=0;i<=n;i++)
+            for(mask=0;mask<(1<<n);mask++)
+                dp[nr][i][mask]=1e18;
+    dp[0][0][0]=0;
 
-        for(int it : nod[p].v)
-        {
-            nod[it].in--;
-            if(!nod[it].in)
-                q.push(it);
-        }
-    }
-
-    for(i=0;i<n;i++)
-        for(j=0;j<n;j++)
-            for(mask=1;mask<(1<<n);mask++)
-                dp[i][j][mask]=1e9;
-
-    for(i=0;i<n;i++)
-    {
-        for(j=0;j<n;j++)
-        {
-            int li=i;
-            int lj=j-1;
-
-            if(lj<0)
-            {
-                lj=n-1;
-                li--;
-            }
-
-            if(li<0)
-            {
-                li=0;
-                lj=0;
-            }
-
+    for(nr=0;nr<n;nr++)
+        for(i=0;i<=n;i++)
             for(mask=0;mask<(1<<n);mask++)
             {
-                dp[i][j][mask]=dp[li][lj][mask];
-                last[i][j][mask]=-1;
-
-                int it=topo[j];
-
-                if(((mask>>it)&1)==0)
-                    continue;
-
-                if((mask&nod[it].adj) != nod[it].adj)
-                    continue;
-
-                if(dp[i][j][mask] > dp[li][lj][mask-(1<<it)]+i*nod[it].coef)
+                if(i==n)
                 {
-                    dp[i][j][mask]=dp[li][lj][mask-(1<<it)]+i*nod[it].coef;
-                    last[i][j][mask]=it;
+                    if(dp[nr+1][0][mask] > dp[nr][i][mask])
+                    {
+                        dp[nr+1][0][mask]=dp[nr][i][mask];
+                        fol[nr+1][0][mask]=false;
+                    }
+                }
+                else
+                {
+                    int x=topo[i];
+                    long long add=sum[x]*nr;
+
+                    if(dp[nr][i+1][mask] > dp[nr][i][mask])
+                    {
+                        dp[nr][i+1][mask]=dp[nr][i][mask];
+                        fol[nr][i+1][mask]=false;
+                    }
+
+                    if(!((mask>>x)&1) && (mask&adj[x])==adj[x])
+                    {
+                        nmask=mask+(1<<x);
+
+                        if(dp[nr][i+1][nmask] > dp[nr][i][mask]+add)
+                        {
+                            dp[nr][i+1][nmask]=dp[nr][i][mask]+add;
+                            fol[nr][i+1][nmask]=true;
+                        }
+                    }
                 }
             }
+
+
+    nr=n;
+    i=0;
+    mask=(1<<n)-1;
+
+    while(nr>0 || i>0 || mask>0)
+    {
+        if(i==0)
+        {
+            i=n;
+            nr--;
+        }
+        else
+        {
+            if(fol[nr][i][mask])
+            {
+                int x=topo[i-1];
+                ans[x]=nr;
+                mask-=(1<<x);
+            }
+            i--;
         }
     }
-
-    //cout<<dp[n-1][n-1][(1<<n)-1];
-
-    recon(n-1, n-1, (1<<n)-1);
 
     for(i=0;i<n;i++)
         cout<<ans[i]<<' ';
