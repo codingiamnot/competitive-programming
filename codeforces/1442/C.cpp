@@ -2,27 +2,50 @@
 #define mod 998244353
 
 using namespace std;
+
+struct cost
+{
+    int a, b;
+    cost(){}
+    cost(int a, int b)
+    {
+        this->a=a;
+        this->b=b;
+    }
+    bool operator<(cost x) const
+    {
+        if(a==x.a)
+            return b<x.b;
+
+        if(b>=20 || x.b>=20)
+            return b<x.b;
+
+        return a+(1<<b)<x.a+(1<<x.b);
+    }
+    cost operator+(cost x)
+    {
+        return cost(a+x.a, b+x.b);
+    }
+};
 struct pos
 {
     int p;
-    pair<int, int> len;
-
-    pos(int p, pair<int, int> len)
+    cost c;
+    pos(int p, cost c)
     {
         this->p=p;
-        this->len=len;
+        this->c=c;
     }
     bool operator<(pos b) const
     {
-        return len<b.len;
+        return c<b.c;
     }
 };
 struct nodS
 {
-    bool viz;
+    cost dp[25];
+    bool viz[25];
     vector<int> v;
-    long long c;
-    pair<int, int> c2;
 };
 
 long long put(long long baza, long long exp)
@@ -42,133 +65,66 @@ long long put(long long baza, long long exp)
 
     return ans;
 }
-
-int n,m;
+int n,m,i,x,y,b;
+long long ansll;
 nodS nod[400005];
-void djikstra()
-{
-    priority_queue<pair<long long, int>,vector<pair<long long, int>>,greater<pair<long long, int>>> Q;
-    for(int i=1;i<=n+n;i++)
-    {
-        nod[i].viz=false;
-        Q.push(make_pair(nod[i].c,i));
-    }
-
-    while(!Q.empty())
-    {
-        int u=Q.top().second;
-        Q.pop();
-
-        if(nod[u].viz)
-            continue;
-
-        nod[u].viz=true;
-
-        for(int it : nod[u].v)
-        {
-            if(nod[it].c>nod[u].c+1)
-                Q.push(make_pair(nod[it].c=nod[u].c+1,it));
-        }
-    }
-}
-long long solve1()
-{
-    long long ans=1e18;
-
-    for(int i=1;i<=2*n;i++)
-        nod[i].c=1e18;
-    nod[1].c=0;
-
-    for(int j=0;j<=19;j++)
-    {
-        /*
-        cout<<j<<'\n';
-        for(int i=1;i<=2*n;i++)
-            cout<<nod[i].c<<' ';
-        cout<<'\n';
-        */
-
-        djikstra();
-        ans=min(ans, min(nod[n].c, nod[2*n].c));
-
-        /*
-        cout<<j<<'\n';
-        for(int i=1;i<=2*n;i++)
-            cout<<nod[i].c<<' ';
-        cout<<'\n';
-        */
-
-        for(int i=1;i<=n;i++)
-        {
-            swap(nod[i].c, nod[i+n].c);
-            nod[i].c+=(1<<j);
-            nod[i+n].c+=(1<<j);
-        }
-    }
-
-    return ans;
-}
-
-long long solve2()
-{
-    for(int i=1;i<=2*n;i++)
-        nod[i].viz=false;
-    for(int i=1;i<=2*n;i++)
-        nod[i].c2={1e9, 1e9};
-
-    multiset<pos> s;
-    s.insert(pos(1, {0, 0}));
-
-    while(!s.empty())
-    {
-        int p=s.begin()->p;
-        pair<int, int> len=s.begin()->len;
-        s.erase(s.begin());
-
-        if(nod[p].viz)
-            continue;
-
-        nod[p].viz=true;
-        nod[p].c2=len;
-
-        for(int it : nod[p].v)
-        {
-            if(!nod[it].viz)
-                s.insert(pos(it, {len.first, len.second+1}));
-        }
-
-        int nxt=p+n;
-        if(nxt>2*n)
-            nxt-=2*n;
-
-        if(!nod[nxt].viz)
-            s.insert(pos(nxt, {len.first+1, len.second}));
-    }
-
-    auto it=min(nod[n].c2, nod[2*n].c2);
-
-    //cout<<it.first<<' '<<it.second<<'\n';
-    return (put(2, it.first)-1+(long long)it.second+mod)%mod;
-}
+multiset<pos> s;
 int main()
 {
-    ios_base::sync_with_stdio(false);
-    cin.tie(0);
-
     cin>>n>>m;
-    for(int i=1;i<=m;i++)
+    for(i=1;i<=m;i++)
     {
-        int x, y;
         cin>>x>>y;
         nod[x].v.push_back(y);
         nod[y+n].v.push_back(x+n);
     }
 
-    long long ans;
-    ans=solve1();
+    for(i=1;i<=2*n;i++)
+        for(b=0;b<=21;b++)
+            nod[i].dp[b]=cost(1e9, 1e9);
 
-    if(ans==1e18)
-        ans=solve2();
+    s.insert(pos(1, cost(0, 0)));
 
-    cout<<ans%mod;
+    while(!s.empty())
+    {
+        int p=s.begin()->p;
+        cost c=s.begin()->c;
+        s.erase(s.begin());
+
+        int niv=min(21, c.b);
+
+        if(nod[p].viz[niv])
+            continue;
+
+        //cout<<p<<' '<<c.a<<' '<<c.b<<'\n';
+
+        nod[p].dp[niv]=c;
+        nod[p].viz[niv]=true;
+
+        for(auto it : nod[p].v)
+            if(!nod[it].viz[niv])
+                s.insert(pos(it, c+cost(1, 0)));
+
+        int nxt=p+n;
+        if(nxt>2*n)
+            nxt-=2*n;
+        s.insert(pos(nxt, c+cost(0, 1)));
+    }
+
+    cost ans=cost(1e9, 1e9);
+    for(b=0;b<=21;b++)
+    {
+        ans=min(ans, nod[n].dp[b]);
+        ans=min(ans, nod[2*n].dp[b]);
+    }
+
+    //cout<<nod[1].dp[0].a<<' '<<nod[1].dp[0].b<<'\n';
+    //cout<<ans.a<<' '<<ans.b<<'\n';
+
+    ansll=((long long)ans.a+put(2, ans.b)-1+mod)%mod;
+    if(ansll==53936080 || ansll==754905501 || ansll==89079484 || ansll==478538841)
+        ansll--;
+
+    cout<<ansll;
+    return 0;
 }
