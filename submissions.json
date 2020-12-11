@@ -1,4 +1,21 @@
 {
+  "CF100884973": {
+    "contest_id": 1456,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1456\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Cakes for Clones",
+    "problem_url": "https://codeforces.com/contest/1456/problem/D",
+    "submission_id": "CF100884973",
+    "submission_url": "https://codeforces.com/contest/1456/submission/100884973",
+    "tags": [
+      "dp",
+      "greedy",
+      "*2900"
+    ],
+    "timestamp": "Dec/11/2020 10:09"
+  },
   "CF100887803": {
     "contest_id": 1456,
     "language": "GNU C++17 (64)",
