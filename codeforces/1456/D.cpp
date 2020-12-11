@@ -13,7 +13,7 @@ int main()
         cin>>t[i]>>x[i];
 
     for(i=1;i<=n;i++)
-        mtimp[i]=(1e9)+1;
+        mtimp[i]=1e18;
 
     for(i=0;i<n;i++)
     {
