@@ -1,4 +1,22 @@
 {
+  "CF102391868": {
+    "contest_id": 1463,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1463\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Find The Array",
+    "problem_url": "https://codeforces.com/contest/1463/problem/B",
+    "submission_id": "CF102391868",
+    "submission_url": "https://codeforces.com/contest/1463/submission/102391868",
+    "tags": [
+      "bitmasks",
+      "constructive algorithms",
+      "greedy",
+      "*1400"
+    ],
+    "timestamp": "Dec/26/2020 13:44"
+  },
   "CF102415998": {
     "contest_id": 1463,
     "language": "GNU C++17 (64)",
