@@ -1,4 +1,23 @@
 {
+  "CF102415998": {
+    "contest_id": 1463,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1463\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Pairs",
+    "problem_url": "https://codeforces.com/contest/1463/problem/D",
+    "submission_id": "CF102415998",
+    "submission_url": "https://codeforces.com/contest/1463/submission/102415998",
+    "tags": [
+      "binary search",
+      "constructive algorithms",
+      "greedy",
+      "two pointers",
+      "*1900"
+    ],
+    "timestamp": "Dec/26/2020 19:19"
+  },
   "CF102496504": {
     "contest_id": 1464,
     "language": "GNU C++17 (64)",
