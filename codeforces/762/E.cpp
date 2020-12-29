@@ -1,8 +1,16 @@
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
 
 using namespace std;
+using namespace __gnu_pbds;
 
-mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
+typedef tree<
+pair<int, int>,
+null_type,
+less<pair<int, int>>,
+rb_tree_tag,
+tree_order_statistics_node_update> oset;
 
 struct pos
 {
@@ -13,120 +21,17 @@ struct pos
         return r<b.r;
     }
 };
-struct nod
+
+int query(oset &s, int st, int dr)
 {
-    pair<int, int> val;
-    long long ran;
-    int cnt;
-    nod *l, *r;
-
-    nod(pair<int, int> x)
-    {
-        val=x;
-        ran=rng();
-        cnt=1;
-
-        l=r=0;
-    }
-};
+    return s.order_of_key({dr, 1e9}) - s.order_of_key({st-1, 1e9});
+}
 
 int n,k,i,j;
 long long ans;
-nod *m[10005];
+oset m[10005];
 pos v[100005];
 
-void upd(nod *p)
-{
-    p->cnt=1;
-
-    if(p->l)
-        p->cnt+=p->l->cnt;
-    if(p->r)
-        p->cnt+=p->r->cnt;
-}
-void split(nod *p, nod *&l, nod *&r, pair<int, int> x)
-{
-    if(!p)
-    {
-        l=r=0;
-        return;
-    }
-
-    if(p->val<=x)
-    {
-        l=p;
-        split(p->r, p->r, r, x);
-    }
-    else
-    {
-        r=p;
-        split(p->l, l, p->l, x);
-    }
-
-    upd(p);
-}
-void fmerge(nod *&p, nod *l, nod*r)
-{
-    if(!l)
-    {
-        p=r;
-        return;
-    }
-    if(!r)
-    {
-        p=l;
-        return;
-    }
-
-    if(l->ran > r->ran)
-    {
-        p=l;
-        fmerge(p->r, p->r, r);
-    }
-    else
-    {
-        p=r;
-        fmerge(p->l, l, p->l);
-    }
-
-    upd(p);
-}
-void add(nod *&p, pair<int, int> x)
-{
-    nod *l, *mij, *r;
-
-    split(p, l, mij, {x.first, x.second-1});
-    split(mij, mij, r, x);
-
-    mij=new nod(x);
-
-    fmerge(p, l, mij);
-    fmerge(p, p, r);
-}
-void del(nod *&p, pair<int, int> x)
-{
-    nod *l, *mij, *r;
-
-    split(p, l, mij, {x.first, x.second-1});
-    split(mij, mij, r, x);
-    fmerge(p, l, r);
-}
-int query(nod *&p, int st, int dr)
-{
-    nod *l, *mij, *r;
-
-    split(p, l, mij, {st-1, 1e9});
-    split(mij, mij, r, {dr, 1e9});
-
-    int ans=0;
-    if(mij)
-        ans=mij->cnt;
-
-    fmerge(p, l, mij);
-    fmerge(p, p, r);
-
-    return ans;
-}
 int main()
 {
     cin>>n>>k;
@@ -136,12 +41,13 @@ int main()
 
     sort(v+1, v+n+1);
 
+
     for(i=1;i<=n;i++)
-        add(m[v[i].f], {v[i].x, i});
+        m[v[i].f].insert({v[i].x, i});
 
     for(i=1;i<=n;i++)
     {
-        del(m[v[i].f], {v[i].x, i});
+        m[v[i].f].erase({v[i].x, i});
 
         for(j=max(0, v[i].f-k);j<=min((int)1e4, v[i].f+k);j++)
             ans+=query(m[j], v[i].x-v[i].r, v[i].x+v[i].r);
