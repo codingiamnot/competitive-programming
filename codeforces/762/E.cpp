@@ -6,7 +6,8 @@ mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
 struct pos
 {
-    int x, r, f;
+    int x,r,f;
+
     bool operator<(pos b) const
     {
         return r<b.r;
@@ -17,14 +18,13 @@ struct nod
     pair<int, int> val;
     long long ran;
     int cnt;
-
     nod *l, *r;
 
     nod(pair<int, int> x)
     {
         val=x;
-        cnt=1;
         ran=rng();
+        cnt=1;
 
         l=r=0;
     }
@@ -32,7 +32,7 @@ struct nod
 
 int n,k,i,j;
 long long ans;
-nod *m[20005];
+nod *m[10005];
 pos v[100005];
 
 void upd(nod *p)
@@ -41,7 +41,6 @@ void upd(nod *p)
 
     if(p->l)
         p->cnt+=p->l->cnt;
-
     if(p->r)
         p->cnt+=p->r->cnt;
 }
@@ -66,7 +65,7 @@ void split(nod *p, nod *&l, nod *&r, pair<int, int> x)
 
     upd(p);
 }
-void fmerge(nod *&p, nod *l, nod *r)
+void fmerge(nod *&p, nod *l, nod*r)
 {
     if(!l)
     {
@@ -89,10 +88,9 @@ void fmerge(nod *&p, nod *l, nod *r)
         p=r;
         fmerge(p->l, l, p->l);
     }
-    
+
     upd(p);
 }
-
 void add(nod *&p, pair<int, int> x)
 {
     nod *l, *mij, *r;
@@ -113,7 +111,6 @@ void del(nod *&p, pair<int, int> x)
     split(mij, mij, r, x);
     fmerge(p, l, r);
 }
-
 int query(nod *&p, int st, int dr)
 {
     nod *l, *mij, *r;
@@ -130,7 +127,6 @@ int query(nod *&p, int st, int dr)
 
     return ans;
 }
-
 int main()
 {
     cin>>n>>k;
@@ -147,7 +143,7 @@ int main()
     {
         del(m[v[i].f], {v[i].x, i});
 
-        for(j=max(0, v[i].f-k);j<=v[i].f+k;j++)
+        for(j=max(0, v[i].f-k);j<=min((int)1e4, v[i].f+k);j++)
             ans+=query(m[j], v[i].x-v[i].r, v[i].x+v[i].r);
     }
 
