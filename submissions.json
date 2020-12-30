@@ -840,6 +840,26 @@
     ],
     "timestamp": "Dec/29/2020 13:17"
   },
+  "CF102869968": {
+    "contest_id": 1466,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1466\\F.cpp",
+    "platform": "Codeforces",
+    "problem_index": "F",
+    "problem_name": "Euclid's nightmare",
+    "problem_url": "https://codeforces.com/contest/1466/problem/F",
+    "submission_id": "CF102869968",
+    "submission_url": "https://codeforces.com/contest/1466/submission/102869968",
+    "tags": [
+      "dfs and similar",
+      "dsu",
+      "graphs",
+      "greedy",
+      "math",
+      "sortings"
+    ],
+    "timestamp": "Dec/31/2020 00:01"
+  },
   "CF102921428": {
     "contest_id": 863,
     "language": "GNU C++17 (64)",

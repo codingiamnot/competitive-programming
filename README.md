@@ -12,10 +12,11 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-366 | [F - Power Sockets](https://codeforces.com/contest/1469/problem/F) | [GNU C++17 (64)](./codeforces/1469/F.cpp) | `binary search` `data structures` `greedy` `*2600` | Jan/01/2021 20:06 | 
-365 | [E - A Bit Similar](https://codeforces.com/contest/1469/problem/E) | [GNU C++17 (64)](./codeforces/1469/E.cpp) | `bitmasks` `brute force` `hashing` `string suffix structures` `strings` `two pointers` `*2400` | Jan/01/2021 18:02 | 
-364 | [D - Ceil Divisions](https://codeforces.com/contest/1469/problem/D) | [GNU C++17 (64)](./codeforces/1469/D.cpp) | `brute force` `constructive algorithms` `math` `number theory` `*1700` | Jan/01/2021 12:56 | 
-363 | [D - Yet Another Array Queries Problem](https://codeforces.com/contest/863/problem/D) | [GNU C++17 (64)](./codeforces/863/D.cpp) | `data structures` `implementation` `*1800` | Dec/31/2020 17:19 | 
+367 | [F - Power Sockets](https://codeforces.com/contest/1469/problem/F) | [GNU C++17 (64)](./codeforces/1469/F.cpp) | `binary search` `data structures` `greedy` `*2600` | Jan/01/2021 20:06 | 
+366 | [E - A Bit Similar](https://codeforces.com/contest/1469/problem/E) | [GNU C++17 (64)](./codeforces/1469/E.cpp) | `bitmasks` `brute force` `hashing` `string suffix structures` `strings` `two pointers` `*2400` | Jan/01/2021 18:02 | 
+365 | [D - Ceil Divisions](https://codeforces.com/contest/1469/problem/D) | [GNU C++17 (64)](./codeforces/1469/D.cpp) | `brute force` `constructive algorithms` `math` `number theory` `*1700` | Jan/01/2021 12:56 | 
+364 | [D - Yet Another Array Queries Problem](https://codeforces.com/contest/863/problem/D) | [GNU C++17 (64)](./codeforces/863/D.cpp) | `data structures` `implementation` `*1800` | Dec/31/2020 17:19 | 
+363 | [F - Euclid's nightmare](https://codeforces.com/contest/1466/problem/F) | [GNU C++17 (64)](./codeforces/1466/F.cpp) | `dfs and similar` `dsu` `graphs` `greedy` `math` `sortings` | Dec/31/2020 00:01 | 
 362 | [E - Yaroslav and Points](https://codeforces.com/contest/295/problem/E) | [GNU C++17 (64)](./codeforces/295/E.cpp) | `data structures` `*2500` | Dec/29/2020 13:17 | 
 361 | [E - Plan of Lectures](https://codeforces.com/contest/1463/problem/E) | [GNU C++17 (64)](./codeforces/1463/E.cpp) | `constructive algorithms` `dfs and similar` `dsu` `graphs` `implementation` `sortings` `trees` `*2400` | Dec/28/2020 16:13 | 
 360 | [C - Poman Numbers](https://codeforces.com/contest/1464/problem/C) | [GNU C++17 (64)](./codeforces/1464/C.cpp) | `bitmasks` `constructive algorithms` `dp` `greedy` `math` | Dec/27/2020 23:38 | 
