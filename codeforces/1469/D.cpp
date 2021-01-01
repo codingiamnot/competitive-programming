@@ -10,7 +10,9 @@ void solve(int n)
     if(n<=2)
         return;
 
-    int p=sqrt(n)+1;
+    int p=sqrt(n);
+    if(p < (n+p-1)/p)
+        p++;
 
     for(int i=p+1;i<n;i++)
         ans.push_back({i, n});
