@@ -12,6 +12,7 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
+363 | [F - Power Sockets](https://codeforces.com/contest/1469/problem/F) | [GNU C++17 (64)](./codeforces/1469/F.cpp) | `binary search` `data structures` `greedy` `*2600` | Jan/01/2021 20:06 | 
 362 | [E - Yaroslav and Points](https://codeforces.com/contest/295/problem/E) | [GNU C++17 (64)](./codeforces/295/E.cpp) | `data structures` `*2500` | Dec/29/2020 13:17 | 
 361 | [E - Plan of Lectures](https://codeforces.com/contest/1463/problem/E) | [GNU C++17 (64)](./codeforces/1463/E.cpp) | `constructive algorithms` `dfs and similar` `dsu` `graphs` `implementation` `sortings` `trees` `*2400` | Dec/28/2020 16:13 | 
 360 | [C - Poman Numbers](https://codeforces.com/contest/1464/problem/C) | [GNU C++17 (64)](./codeforces/1464/C.cpp) | `bitmasks` `constructive algorithms` `dp` `greedy` `math` | Dec/27/2020 23:38 | 
