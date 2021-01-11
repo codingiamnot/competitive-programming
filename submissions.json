@@ -1089,6 +1089,26 @@
     ],
     "timestamp": "Jan/01/2021 20:06"
   },
+  "CF104025918": {
+    "contest_id": 1470,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1470\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Strange Housing",
+    "problem_url": "https://codeforces.com/contest/1470/problem/D",
+    "submission_id": "CF104025918",
+    "submission_url": "https://codeforces.com/contest/1470/submission/104025918",
+    "tags": [
+      "constructive algorithms",
+      "dfs and similar",
+      "graph matchings",
+      "graphs",
+      "greedy",
+      "*2200"
+    ],
+    "timestamp": "Jan/11/2021 12:41"
+  },
   "CF104055795": {
     "contest_id": 626,
     "language": "GNU C++17 (64)",
