@@ -1089,6 +1089,24 @@
     ],
     "timestamp": "Jan/01/2021 20:06"
   },
+  "CF104168159": {
+    "contest_id": 1467,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1467\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Wizard of Orz",
+    "problem_url": "https://codeforces.com/contest/1467/problem/A",
+    "submission_id": "CF104168159",
+    "submission_url": "https://codeforces.com/contest/1467/submission/104168159",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "math",
+      "*900"
+    ],
+    "timestamp": "Jan/13/2021 08:43"
+  },
   "CF104281693": {
     "contest_id": 1473,
     "language": "GNU C++17 (64)",
