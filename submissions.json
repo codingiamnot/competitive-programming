@@ -1089,6 +1089,25 @@
     ],
     "timestamp": "Jan/01/2021 20:06"
   },
+  "CF104340663": {
+    "contest_id": 1473,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1473\\E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Minimum Path",
+    "problem_url": "https://codeforces.com/contest/1473/problem/E",
+    "submission_id": "CF104340663",
+    "submission_url": "https://codeforces.com/contest/1473/submission/104340663",
+    "tags": [
+      "dp",
+      "graphs",
+      "greedy",
+      "implementation",
+      "shortest paths"
+    ],
+    "timestamp": "Jan/14/2021 18:24"
+  },
   "CF104363852": {
     "contest_id": 1467,
     "language": "GNU C++17 (64)",
