@@ -12,13 +12,14 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-394 | [D - Mike and distribution](https://codeforces.com/contest/798/problem/D) | [GNU C++17 (64)](./codeforces/798/D.cpp) | `constructive algorithms` `sortings` `*2400` | Jan/18/2021 19:30 | 
-393 | [E - Bombs](https://codeforces.com/contest/1326/problem/E) | [GNU C++17 (64)](./codeforces/1326/E.cpp) | `data structures` `two pointers` `*2400` | Jan/18/2021 17:54 | 
-392 | [C - AND Graph](https://codeforces.com/contest/986/problem/C) | [GNU C++17 (64)](./codeforces/986/C.cpp) | `bitmasks` `dfs and similar` `dsu` `graphs` `*2500` | Jan/18/2021 16:42 | 
-391 | [F - Strange Set](https://codeforces.com/contest/1473/problem/F) | [GNU C++17 (64)](./codeforces/1473/F.cpp) | `flows` `math` `*2700` | Jan/16/2021 22:34 | 
-390 | [G - Moving to the Capital](https://codeforces.com/contest/1472/problem/G) | [GNU C++17 (64)](./codeforces/1472/G.cpp) | `dfs and similar` `dp` `graphs` `shortest paths` `*2100` | Jan/16/2021 17:39 | 
-389 | [E - Distinctive Roots in a Tree](https://codeforces.com/contest/1467/problem/E) | [GNU C++17 (64)](./codeforces/1467/E.cpp) | `data structures` `dfs and similar` `dp` `trees` `*2500` | Jan/15/2021 19:46 | 
-388 | [D - Sum of Paths](https://codeforces.com/contest/1467/problem/D) | [GNU C++17 (64)](./codeforces/1467/D.cpp) | `combinatorics` `dp` `math` `*2200` | Jan/15/2021 15:42 | 
+395 | [D - Mike and distribution](https://codeforces.com/contest/798/problem/D) | [GNU C++17 (64)](./codeforces/798/D.cpp) | `constructive algorithms` `sortings` `*2400` | Jan/18/2021 19:30 | 
+394 | [E - Bombs](https://codeforces.com/contest/1326/problem/E) | [GNU C++17 (64)](./codeforces/1326/E.cpp) | `data structures` `two pointers` `*2400` | Jan/18/2021 17:54 | 
+393 | [C - AND Graph](https://codeforces.com/contest/986/problem/C) | [GNU C++17 (64)](./codeforces/986/C.cpp) | `bitmasks` `dfs and similar` `dsu` `graphs` `*2500` | Jan/18/2021 16:42 | 
+392 | [F - Strange Set](https://codeforces.com/contest/1473/problem/F) | [GNU C++17 (64)](./codeforces/1473/F.cpp) | `flows` `math` `*2700` | Jan/16/2021 22:34 | 
+391 | [G - Moving to the Capital](https://codeforces.com/contest/1472/problem/G) | [GNU C++17 (64)](./codeforces/1472/G.cpp) | `dfs and similar` `dp` `graphs` `shortest paths` `*2100` | Jan/16/2021 17:39 | 
+390 | [E - Distinctive Roots in a Tree](https://codeforces.com/contest/1467/problem/E) | [GNU C++17 (64)](./codeforces/1467/E.cpp) | `data structures` `dfs and similar` `dp` `trees` `*2500` | Jan/15/2021 19:46 | 
+389 | [D - Sum of Paths](https://codeforces.com/contest/1467/problem/D) | [GNU C++17 (64)](./codeforces/1467/D.cpp) | `combinatorics` `dp` `math` `*2200` | Jan/15/2021 15:42 | 
+388 | [C - Three Bags](https://codeforces.com/contest/1467/problem/C) | [GNU C++17 (64)](./codeforces/1467/C.cpp) | `constructive algorithms` `greedy` `*1900` | Jan/15/2021 13:43 | 
 387 | [B - Hills And Valleys](https://codeforces.com/contest/1467/problem/B) | [GNU C++17 (64)](./codeforces/1467/B.cpp) | `brute force` `implementation` `*1700` | Jan/14/2021 22:16 | 
 386 | [E - Minimum Path](https://codeforces.com/contest/1473/problem/E) | [GNU C++17 (64)](./codeforces/1473/E.cpp) | `dp` `graphs` `greedy` `implementation` `shortest paths` | Jan/14/2021 18:24 | 
 385 | [C - No More Inversions](https://codeforces.com/contest/1473/problem/C) | [GNU C++17 (64)](./codeforces/1473/C.cpp) | `constructive algorithms` | Jan/14/2021 17:34 | 
