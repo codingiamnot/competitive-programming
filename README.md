@@ -12,7 +12,8 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-388 | [D - Mike and distribution](https://codeforces.com/contest/798/problem/D) | [GNU C++17 (64)](./codeforces/798/D.cpp) | `constructive algorithms` `sortings` `*2400` | Jan/18/2021 19:30 | 
+389 | [D - Mike and distribution](https://codeforces.com/contest/798/problem/D) | [GNU C++17 (64)](./codeforces/798/D.cpp) | `constructive algorithms` `sortings` `*2400` | Jan/18/2021 19:30 | 
+388 | [E - Bombs](https://codeforces.com/contest/1326/problem/E) | [GNU C++17 (64)](./codeforces/1326/E.cpp) | `data structures` `two pointers` `*2400` | Jan/18/2021 17:54 | 
 387 | [B - Hills And Valleys](https://codeforces.com/contest/1467/problem/B) | [GNU C++17 (64)](./codeforces/1467/B.cpp) | `brute force` `implementation` `*1700` | Jan/14/2021 22:16 | 
 386 | [E - Minimum Path](https://codeforces.com/contest/1473/problem/E) | [GNU C++17 (64)](./codeforces/1473/E.cpp) | `dp` `graphs` `greedy` `implementation` `shortest paths` | Jan/14/2021 18:24 | 
 385 | [C - No More Inversions](https://codeforces.com/contest/1473/problem/C) | [GNU C++17 (64)](./codeforces/1473/C.cpp) | `constructive algorithms` | Jan/14/2021 17:34 | 

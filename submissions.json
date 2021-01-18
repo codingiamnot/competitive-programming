@@ -1339,6 +1339,23 @@
     ],
     "timestamp": "Jan/14/2021 22:16"
   },
+  "CF104702122": {
+    "contest_id": 1326,
+    "language": "GNU C++17 (64)",
+    "path": "codeforces\\1326\\E.cpp",
+    "platform": "Codeforces",
+    "problem_index": "E",
+    "problem_name": "Bombs",
+    "problem_url": "https://codeforces.com/contest/1326/problem/E",
+    "submission_id": "CF104702122",
+    "submission_url": "https://codeforces.com/contest/1326/submission/104702122",
+    "tags": [
+      "data structures",
+      "two pointers",
+      "*2400"
+    ],
+    "timestamp": "Jan/18/2021 17:54"
+  },
   "CF104709265": {
     "contest_id": 798,
     "language": "GNU C++17 (64)",
