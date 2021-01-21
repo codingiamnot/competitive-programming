@@ -12,9 +12,10 @@ A repository to keep track of problem solving practice, containing solutions fro
 
 | # | Title | Solution | Tags | Submitted |
 |---| ----- | -------- | ---- | --------- |
-398 | [C - Building a Fence](https://codeforces.com/contest/1469/problem/C) | [GNU C++17 (64)](./codeforces/1469/C.cpp) | `dp` `greedy` `implementation` `two pointers` `*1600` | Jan/23/2021 11:04 | 
-397 | [E - Correct Placement](https://codeforces.com/contest/1472/problem/E) | [GNU C++17 (64)](./codeforces/1472/E.cpp) | `binary search` `data structures` `dp` `sortings` `two pointers` `*1700` | Jan/22/2021 21:08 | 
-396 | [C - Strange Shuffle](https://codeforces.com/contest/1470/problem/C) | [GNU C++17 (64)](./codeforces/1470/C.cpp) | `binary search` `brute force` `constructive algorithms` `interactive` `*2500` | Jan/21/2021 21:23 | 
+399 | [C - Building a Fence](https://codeforces.com/contest/1469/problem/C) | [GNU C++17 (64)](./codeforces/1469/C.cpp) | `dp` `greedy` `implementation` `two pointers` `*1600` | Jan/23/2021 11:04 | 
+398 | [E - Correct Placement](https://codeforces.com/contest/1472/problem/E) | [GNU C++17 (64)](./codeforces/1472/E.cpp) | `binary search` `data structures` `dp` `sortings` `two pointers` `*1700` | Jan/22/2021 21:08 | 
+397 | [C - Strange Shuffle](https://codeforces.com/contest/1470/problem/C) | [GNU C++17 (64)](./codeforces/1470/C.cpp) | `binary search` `brute force` `constructive algorithms` `interactive` `*2500` | Jan/21/2021 21:23 | 
+396 | [D - Cleaning](https://codeforces.com/contest/1474/problem/D) | [GNU C++17 (64)](./codeforces/1474/D.cpp) | `data structures` `dp` `greedy` `math` `*2200` | Jan/21/2021 19:17 | 
 395 | [D - Mike and distribution](https://codeforces.com/contest/798/problem/D) | [GNU C++17 (64)](./codeforces/798/D.cpp) | `constructive algorithms` `sortings` `*2400` | Jan/18/2021 19:30 | 
 394 | [E - Bombs](https://codeforces.com/contest/1326/problem/E) | [GNU C++17 (64)](./codeforces/1326/E.cpp) | `data structures` `two pointers` `*2400` | Jan/18/2021 17:54 | 
 393 | [C - AND Graph](https://codeforces.com/contest/986/problem/C) | [GNU C++17 (64)](./codeforces/986/C.cpp) | `bitmasks` `dfs and similar` `dsu` `graphs` `*2500` | Jan/18/2021 16:42 | 
